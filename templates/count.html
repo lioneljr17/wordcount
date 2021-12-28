@@ -1,0 +1,15 @@
+<h1> there are this amount {{count}} of word  <h1>
+
+
+<h1> original:</h1>
+{{fulltext}}
+
+<h1> word count: </h1>
+
+  {%for word, counttotal in sortedword%}
+
+    {{word}} - {{counttotal}}
+    <br/>
+
+
+  {%endfor%}
